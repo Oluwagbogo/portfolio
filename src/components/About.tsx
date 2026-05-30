@@ -33,6 +33,7 @@ export default function About() {
     'Explainable AI (XAI)', 'Healthcare AI & Diagnostics', 'Algorithmic Fairness & Bias Mitigation',
     'Neuroimaging & Brain-Behavior Modeling', 'Clinical Decision Support', 'Transfer Learning',
     'Human-Centered AI', 'Large-Scale Observational Studies',
+    'Transportation AI & Equity', 'Public Infrastructure Analytics',
   ]
 
   return (
@@ -92,7 +93,7 @@ export default function About() {
                 I'm an AI Research Scientist and PhD candidate at <strong className="text-ink">Morgan State University</strong> with a focus on healthcare AI, explainability, and algorithmic fairness. My work involves designing, validating, and communicating novel machine learning methods — from hypothesis to peer-reviewed publication.
               </p>
               <p>
-                With <strong className="text-ink">10+ publications</strong> in journals including <strong className="text-ink">IEEE Access</strong>, <strong className="text-ink">Biomedical Signal Processing & Control</strong>, and <strong className="text-ink">Biological Psychiatry</strong>, I bring a track record of independent and collaborative research across healthcare, neuroimaging, and policy domains.
+                With <strong className="text-ink">10+ publications</strong> in journals including <strong className="text-ink">IEEE Access</strong>, <strong className="text-ink">Biomedical Signal Processing & Control</strong>, and <strong className="text-ink">Biological Psychiatry</strong>, I bring a track record of independent and collaborative research across healthcare, neuroimaging, transportation equity, and public infrastructure domains.
               </p>
               <p>
                 I collaborate across disciplines — partnering with <strong className="text-ink">Yale University</strong> on neuroimaging studies and co-authoring with clinical radiologists and psychiatrists — translating complex AI findings into insights that matter to practitioners and decision-makers.

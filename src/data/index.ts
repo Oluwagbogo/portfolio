@@ -8,7 +8,7 @@ export const personal = {
   github: 'https://github.com/Oluwagbogo',
   linkedin: 'https://linkedin.com/in/joseph-oluwagbogo-aina',
   googleScholar: 'https://scholar.google.com/citations?user=ef1Y6swAAAAJ&hl',
-  bio: `AI Research Scientist and PhD candidate at Morgan State University (GPA 4.0/4.0) with 10+ peer-reviewed publications. I design explainable, bias-aware AI systems for healthcare — spanning early-stage cancer diagnostics, neuroimaging-based psychiatric prediction, and algorithmic fairness. My research is published in IEEE Access, Biomedical Signal Processing & Control, and Biological Psychiatry, and presented at international conferences.`,
+  bio: `AI Research Scientist and PhD candidate at Morgan State University (GPA 4.0/4.0) with 10+ peer-reviewed publications. I design explainable, bias-aware AI systems for healthcare — spanning early-stage cancer diagnostics, neuroimaging-based psychiatric prediction, and algorithmic fairness. My research is published in IEEE Access, Biomedical Signal Processing & Control, Biological Psychiatry, and presented at international conferences.`,
 }
 
 export const stats = [

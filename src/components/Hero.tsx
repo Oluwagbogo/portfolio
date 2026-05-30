@@ -12,11 +12,11 @@ const fadeUp = (delay = 0) => ({
 })
 
 const ROLES = [
-  'AI Research Scientist',
-  'Healthcare AI Specialist',
-  'IEEE-Published Author',
-  'Explainable AI Researcher',
-  'PhD Candidate · GPA 4.0/4.0',
+  'an AI Research Scientist',
+  'a Healthcare AI Specialist',
+  'an IEEE-Published Author',
+  'an Explainable AI Researcher',
+  'a PhD Candidate · GPA 4.0/4.0',
 ]
 
 function Typewriter({ texts }: { texts: string[] }) {
@@ -128,7 +128,7 @@ export default function Hero() {
 
           {/* Typewriter role line */}
           <motion.div {...fadeUp(0.32)} className="h-8 mb-2 flex items-center">
-            <span className="text-ink-muted font-medium text-lg mr-2">I'm an</span>
+            <span className="text-ink-muted font-medium text-lg mr-2">I'm</span>
             <Typewriter texts={ROLES} />
           </motion.div>
 
