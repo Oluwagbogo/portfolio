@@ -8,6 +8,8 @@ const venues = [
   '🔬 IEEE BIBE 2023',
   '📊 Computer Methods & Programs in Biomedicine',
   '🏛️ Collaboration with Yale University',
+  '🚌 Transportation Research Board 2025',
+  '🛣️ ICTD 2025 · ASCE',
   '🏆 CAIE™ Certified AI Engineer',
 ]
 

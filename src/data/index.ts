@@ -150,15 +150,17 @@ export const projects = [
     tag: 'Applied Research',
     tagColor: 'orange',
     description: 'Designed a large-scale analytical study of 150M+ transit records to surface patterns in route efficiency, delay propagation, and stop performance. Delivered interactive Power BI dashboards that translate complex findings into actionable policy insights.',
+    highlight: 'Published · TRB Annual Meeting 2025',
     tech: ['Large-Scale Data Analysis', 'Statistical Modeling', 'Power BI', 'Policy Translation'],
     icon: '🚌',
   },
   {
     title: 'Real-Time Road Damage Detection',
-    period: 'Aug 2023',
+    period: 'Aug 2023 – 2025',
     tag: 'Computer Vision',
     tagColor: 'red',
     description: 'Developed a real-time infrastructure assessment system using YOLOv8, enabling rapid identification of road damage at scale. The methodology demonstrates how computer vision can automate safety-critical inspections that traditionally require human field teams.',
+    highlight: 'Published · ICTD 2025 (ASCE)',
     tech: ['Object Detection', 'Computer Vision', 'Real-Time Inference', 'Infrastructure AI'],
     icon: '🛣️',
   },
@@ -174,14 +176,16 @@ export const projects = [
 ]
 
 export const publications = [
+  // 2026
   {
     title: 'A cross data learning architecture for breast cancer classification using mammograms.',
     authors: 'Aina, J., O. Akinniyi, M. N. A. Mulla, J. W. Gichoya, H. Trivedi, T. J. Meeker, Md M. Rahman, and F. Khalifa.',
     venue: 'Biomedical Signal Processing and Control 123 (2026): 110592.',
     year: 2026,
     type: 'Journal',
-    url: 'https://doi.org/10.1016/j.bspc.2026.110592'
+    url: 'https://doi.org/10.1016/j.bspc.2026.110592',
   },
+  // 2025
   {
     title: 'The role of AI for improved management of breast cancer: Enhanced diagnosis and health disparity mitigation.',
     authors: 'Akinniyi, Oluwatunmise, Jose Dixon, Joseph Aina, et al.',
@@ -212,8 +216,25 @@ export const publications = [
     venue: 'IEEE 4th International Conference on Computing and Machine Intelligence (ICMI), 2025, pp. 1–5.',
     year: 2025,
     type: 'Conference',
-    url: 'https://ieeexplore.ieee.org/document/11141064'
+    url: 'https://ieeexplore.ieee.org/document/11141064',
   },
+  {
+    title: 'Real-Time Road Damage Detection Using YOLOv8.',
+    authors: 'Aina, J. O., Haghi, N., Famewo, B., Efe, S., et al.',
+    venue: 'International Conference on Transportation and Development (ICTD) 2025.',
+    year: 2025,
+    type: 'Conference',
+    url: 'https://doi.org/10.1061/9780784486191.036',
+  },
+  {
+    title: 'A Study on Maryland Transit Administration (MTA) Bus Services Stop-Level Reliability from an Equity Perspective Using Archived GTFS-RT Data.',
+    authors: 'Tanvir, M. R., Aina, J. O., Chavis, C., Campbell, S., et al.',
+    venue: 'Transportation Research Board Annual Meeting (TRB), Washington D.C., January 2025.',
+    year: 2025,
+    type: 'Conference',
+    url: 'https://doi.org/10.13140/RG.2.2.36113.75361',
+  },
+  // 2024
   {
     title: 'A Hybrid Learning-Architecture for Mental Disorder Detection Using Emotion Recognition.',
     authors: 'J. Aina, O. Akinniyi, M. M. Rahman, V. Odero-Marah and F. Khalifa.',
@@ -222,6 +243,7 @@ export const publications = [
     type: 'Journal',
     url: 'https://doi.org/10.1109/ACCESS.2024.3421376',
   },
+  // 2023
   {
     title: 'Ensemble and Transformer Models for Infectious Disease Prediction.',
     authors: 'B. I. Adeika, J. Aina, T. Ibirinde, T. Adeyemi, M. M. Rahman and S. Pramanik.',

@@ -11,12 +11,20 @@ const typeConfig: Record<string, { icon: typeof BookOpen; color: string; bg: str
 
 const filters = ['All', 'Journal', 'Conference', 'Thesis']
 
+const INITIAL_COUNT = 6
+
 export default function Publications() {
   const [activeFilter, setActiveFilter] = useState('All')
+  const [showAll, setShowAll] = useState(false)
 
   const filtered = activeFilter === 'All'
     ? publications
     : publications.filter(p => p.type === activeFilter)
+
+  const handleFilterChange = (f: string) => { setActiveFilter(f); setShowAll(false) }
+
+  const visible = showAll ? filtered : filtered.slice(0, INITIAL_COUNT)
+  const hiddenCount = filtered.length - INITIAL_COUNT
 
   return (
     <section id="publications" className="py-24 bg-cream dot-bg">
@@ -61,7 +69,7 @@ export default function Publications() {
           {filters.map(f => (
             <button
               key={f}
-              onClick={() => setActiveFilter(f)}
+              onClick={() => handleFilterChange(f)}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
                 activeFilter === f
                   ? 'bg-accent text-white shadow-md shadow-accent/25'
@@ -81,7 +89,7 @@ export default function Publications() {
         {/* Publication list */}
         <AnimatePresence mode="popLayout">
           <div className="space-y-4">
-            {filtered.map((pub, i) => {
+            {visible.map((pub, i) => {
               const { icon: TypeIcon, color, bg } = typeConfig[pub.type] || typeConfig.Journal
               const link = (pub as { url?: string; doi?: string }).url || (pub as { doi?: string }).doi || null
               return (
@@ -149,6 +157,29 @@ export default function Publications() {
             })}
           </div>
         </AnimatePresence>
+
+        {/* Show more / Show less */}
+        {hiddenCount > 0 || showAll ? (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="flex justify-center mt-8"
+          >
+            <button
+              onClick={() => setShowAll(v => !v)}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-accent text-accent font-semibold text-sm hover:bg-accent hover:text-white transition-all hover:shadow-md hover:shadow-accent/25"
+            >
+              {showAll ? 'Show less' : `Show all ${filtered.length} publications`}
+              <motion.span
+                animate={{ rotate: showAll ? 180 : 0 }}
+                transition={{ duration: 0.3 }}
+                className="inline-block"
+              >
+                ↓
+              </motion.span>
+            </button>
+          </motion.div>
+        ) : null}
       </div>
     </section>
   )
