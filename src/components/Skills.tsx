@@ -55,10 +55,10 @@ function SkillBar({ name, level, color, animate }: { name: string; level: number
   return (
     <div className="mb-4">
       <div className="flex justify-between items-center mb-1.5">
-        <span className="text-sm font-medium text-ink">{name}</span>
-        <span className="text-xs text-ink-muted font-mono">{level}%</span>
+        <span className="text-sm font-medium text-ink dark:text-gray-200">{name}</span>
+        <span className="text-xs text-ink-muted dark:text-gray-500 font-mono">{level}%</span>
       </div>
-      <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+      <div className="h-2 bg-gray-100 dark:bg-gray-700/60 rounded-full overflow-hidden">
         <div
           className={`h-full rounded-full ${barColors[color] || barColors.accent} transition-all duration-1000 ease-out`}
           style={{ width: `${width}%` }}
@@ -72,7 +72,7 @@ export default function Skills() {
   const { ref, inView } = useInView(0.2)
 
   return (
-    <section id="skills" className="py-24 bg-white">
+    <section id="skills" className="py-24 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,10 +82,10 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <span className="text-accent text-sm font-bold uppercase tracking-widest">Research Toolkit</span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-ink mt-2 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-ink dark:text-white mt-2 tracking-tight">
             Methods &amp; <span className="gradient-text">Expertise</span>
           </h2>
-          <p className="text-ink-muted mt-4 max-w-xl mx-auto">
+          <p className="text-ink-muted dark:text-gray-400 mt-4 max-w-xl mx-auto">
             A depth-first skill set built for rigorous research — from experimental design and statistical modeling to production-ready AI systems.
           </p>
         </motion.div>
@@ -102,10 +102,10 @@ export default function Skills() {
           {Object.entries(skills).map(([category, items]) => {
             const colorKey = categoryColors[category] || 'accent'
             return (
-              <div key={category} className="bg-cream rounded-2xl p-6 border border-border">
+              <div key={category} className="bg-cream dark:bg-gray-800 rounded-2xl p-6 border border-border dark:border-gray-700/60 hover:border-accent/30 hover:shadow-md dark:hover:shadow-accent/5 transition-all">
                 <div className="flex items-center gap-2 mb-5">
                   <div className={`w-2.5 h-2.5 rounded-full ${dotColors[colorKey]}`} />
-                  <h3 className="font-bold text-ink text-sm">{category}</h3>
+                  <h3 className="font-bold text-ink dark:text-white text-sm">{category}</h3>
                 </div>
                 {items.map(skill => (
                   <SkillBar
@@ -129,7 +129,7 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-center"
         >
-          <h3 className="text-sm font-bold text-ink-muted uppercase tracking-widest mb-6">Technologies & Tools</h3>
+          <h3 className="text-sm font-bold text-ink-muted dark:text-gray-500 uppercase tracking-widest mb-6">Technologies & Tools</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {techBadges.map((tech, i) => (
               <motion.span
@@ -138,7 +138,7 @@ export default function Skills() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.04 }}
-                className="inline-flex items-center gap-1.5 bg-white text-ink text-sm font-medium px-3.5 py-2 rounded-full border border-border hover:border-accent hover:text-accent hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default"
+                className="inline-flex items-center gap-1.5 bg-cream dark:bg-gray-800 text-ink dark:text-gray-200 text-sm font-medium px-3.5 py-2 rounded-full border border-border dark:border-gray-700/60 hover:border-accent hover:text-accent hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default"
               >
                 <span>{tech.emoji}</span>
                 {tech.name}

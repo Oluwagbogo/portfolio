@@ -21,6 +21,11 @@ body {
   overflow-x: hidden;
 }
 
+.dark body {
+  background-color: #030712;
+  color: #F8FAFC;
+}
+
 #root {
   width: 100%;
   min-height: 100vh;

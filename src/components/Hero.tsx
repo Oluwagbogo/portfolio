@@ -104,7 +104,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-cream">
+    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-cream dark:bg-gray-950">
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
       {/* Ambient blobs */}
@@ -120,7 +120,7 @@ export default function Hero() {
             Open to Research Scientist &amp; AI Research Roles
           </motion.div>
 
-          <motion.h1 {...fadeUp(0.2)} className="text-5xl md:text-6xl lg:text-[68px] font-extrabold text-ink leading-[1.02] tracking-tight mb-4">
+          <motion.h1 {...fadeUp(0.2)} className="text-5xl md:text-6xl lg:text-[68px] font-extrabold text-ink dark:text-white leading-[1.02] tracking-tight mb-4">
             Joseph<br />
             <span className="gradient-text">Oluwagbogo</span><br />
             Aina
@@ -137,7 +137,7 @@ export default function Hero() {
             {personal.title}
           </motion.div>
 
-          <motion.p {...fadeUp(0.45)} className="text-ink-muted leading-relaxed mb-8 max-w-lg">
+          <motion.p {...fadeUp(0.45)} className="text-ink-muted dark:text-gray-400 leading-relaxed mb-8 max-w-lg">
             {personal.bio}
           </motion.p>
 
@@ -150,7 +150,7 @@ export default function Hero() {
             </a>
             <a
               href={`mailto:${personal.email}`}
-              className="inline-flex items-center gap-2 bg-white text-ink font-semibold px-6 py-3 rounded-full border border-border hover:border-accent hover:text-accent transition-all hover:-translate-y-0.5 hover:shadow-md"
+              className="inline-flex items-center gap-2 bg-white dark:bg-gray-800 text-ink dark:text-white font-semibold px-6 py-3 rounded-full border border-border dark:border-gray-700 hover:border-accent hover:text-accent transition-all hover:-translate-y-0.5 hover:shadow-md"
             >
               <Mail size={16} />
               Get in Touch
@@ -158,17 +158,17 @@ export default function Hero() {
           </motion.div>
 
           <motion.div {...fadeUp(0.65)} className="flex items-center gap-4">
-            <a href={personal.github} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white border border-border text-ink-muted hover:text-accent hover:border-accent hover:shadow-md transition-all hover:-translate-y-0.5">
+            <a href={personal.github} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white dark:bg-gray-800 border border-border dark:border-gray-700 text-ink-muted dark:text-gray-400 hover:text-accent hover:border-accent hover:shadow-md transition-all hover:-translate-y-0.5">
               <GithubIcon size={18} />
             </a>
-            <a href={personal.linkedin} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white border border-border text-ink-muted hover:text-accent hover:border-accent hover:shadow-md transition-all hover:-translate-y-0.5">
+            <a href={personal.linkedin} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white dark:bg-gray-800 border border-border dark:border-gray-700 text-ink-muted dark:text-gray-400 hover:text-accent hover:border-accent hover:shadow-md transition-all hover:-translate-y-0.5">
               <LinkedinIcon size={18} />
             </a>
-            <a href={personal.googleScholar} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white border border-border text-ink-muted hover:text-accent hover:border-accent hover:shadow-md transition-all hover:-translate-y-0.5">
+            <a href={personal.googleScholar} target="_blank" rel="noreferrer" className="p-2.5 rounded-xl bg-white dark:bg-gray-800 border border-border dark:border-gray-700 text-ink-muted dark:text-gray-400 hover:text-accent hover:border-accent hover:shadow-md transition-all hover:-translate-y-0.5">
               <BookOpen size={18} />
             </a>
-            <span className="h-px w-8 bg-border" />
-            <span className="text-xs text-ink-subtle font-medium">Morgan State University</span>
+            <span className="h-px w-8 bg-border dark:bg-gray-700" />
+            <span className="text-xs text-ink-subtle dark:text-gray-500 font-medium">Morgan State University</span>
           </motion.div>
         </div>
 
