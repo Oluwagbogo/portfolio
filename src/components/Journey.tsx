@@ -6,7 +6,7 @@ const chapters = [
     period: '2015 – 2019',
     location: 'University of Ilorin, Nigeria',
     title: 'An Economist Who Couldn\'t Stop Counting',
-    story: `I started with Economics — but what captivated me wasn't markets or policy theory. It was data. The patterns buried in numbers, the decisions you could justify or challenge with a well-structured dataset. By the time I graduated, I knew my real interest lay at the intersection of quantitative reasoning and systems thinking.`,
+    story: `I started with Economics, but what captivated me wasn't markets or policy theory. It was data. The patterns buried in numbers, the decisions you could justify or challenge with a well-structured dataset. By the time I graduated, I knew my real interest lay at the intersection of quantitative reasoning and systems thinking.`,
     milestone: 'BSc Economics · GPA 3.51 / 4.0',
     side: 'left',
   },
@@ -15,7 +15,7 @@ const chapters = [
     period: '2019 – 2022',
     location: 'Nigeria',
     title: 'Building Systems That Actually Work',
-    story: `Straight out of university, I joined Enterprise Business Info-Systems as a Data & Systems Engineer — and then took on a contract role with the Bank of Industry. I was building dashboards for government and enterprise clients, designing ETL pipelines, architecting deployment systems. The work was practical and high-stakes. I learned that data isn't useful until it reaches the right person, in the right form, at the right time.`,
+    story: `Straight out of university, I joined Enterprise Business Info-Systems as a Data & Systems Engineer, and then took on a contract role with the Bank of Industry. I was building dashboards for government and enterprise clients, designing ETL pipelines, architecting deployment systems. The work was practical and high-stakes. I learned that data isn't useful until it reaches the right person, in the right form, at the right time.`,
     milestone: 'First deployment that cut analyst processing time by 60%',
     side: 'right',
   },
@@ -24,7 +24,7 @@ const chapters = [
     period: '2022',
     location: 'Baltimore, MD, USA',
     title: 'The Leap Across the Atlantic',
-    story: `In 2022, I packed up and moved to the United States to pursue a Master's in Advanced Computing at Morgan State University. It was a deliberate pivot — I wanted to go deeper, to contribute to research, not just ship products. I wanted to understand why models work, when they fail, and who they fail for.`,
+    story: `In 2022, I packed up and moved to the United States to pursue a Master's in Advanced Computing at Morgan State University. It was a deliberate pivot, I wanted to go deeper, to contribute to research, not just ship products. I wanted to understand why models work, when they fail, and who they fail for.`,
     milestone: 'Enrolled in MSc Advanced Computing · Began AI research',
     side: 'left',
   },
@@ -42,7 +42,7 @@ const chapters = [
     period: '2024 – Present',
     location: 'Morgan State University & Yale University',
     title: 'PhD, Publications, and a Broader Mission',
-    story: `Now a PhD candidate in Computer and Electrical Systems Engineering, my work spans breast cancer diagnostics, neuroimaging-based psychiatric prediction, and transit equity — each project tied together by one question: how do we build AI that works fairly, for everyone? Collaborating with Yale researchers, publishing in journals like Biological Psychiatry, and presenting at IEEE conferences, I'm building a body of work I'm proud of — and a research career just getting started.`,
+    story: `Now a PhD candidate in Computer and Electrical Systems Engineering, my work spans breast cancer diagnostics, neuroimaging-based psychiatric prediction, and transit equity. Each project tied together by one question: how do we build AI that works fairly, for everyone? Collaborating with Yale researchers, publishing in journals like Biological Psychiatry, and presenting at IEEE conferences, I'm building a body of work I'm proud of and a research career just getting started.`,
     milestone: '10+ publications · Yale collaboration · IEEE ICMI, CAI, BIBE',
     side: 'left',
   },
@@ -68,7 +68,7 @@ export default function Journey() {
             The Road to <span className="gradient-text">Research</span>
           </h2>
           <p className="text-ink-muted dark:text-gray-400 mt-4 max-w-2xl mx-auto leading-relaxed">
-            From an economics classroom in Nigeria to AI research labs in the United States — this is how I got here.
+            From an economics classroom in Nigeria to AI research labs in the United States, this is how I got here.
           </p>
         </motion.div>
 
