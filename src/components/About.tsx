@@ -7,7 +7,7 @@ const stats = [
   { icon: BookOpen, label: 'Peer-reviewed papers', value: 10, suffix: '+' },
   { icon: Award, label: 'Google Scholar citations', value: 80, suffix: '+' },
   { icon: Users, label: 'Research collaborators', value: 20, suffix: '+' },
-  { icon: Cpu, label: 'Years of experience', value: 7, suffix: '+' },
+  { icon: Cpu, label: 'Years of experience', value: 6, suffix: '+' },
 ]
 
 function Counter({ to, suffix, decimals = 0, animate }: { to: number; suffix: string; decimals?: number; animate: boolean }) {
@@ -30,6 +30,7 @@ export default function About() {
   const { ref, inView } = useInView()
 
   const interests = [
+    'KPI Reporting & Dashboard Development', 'ETL & Workflow Automation',
     'Explainable AI (XAI)', 'Healthcare AI & Diagnostics', 'Algorithmic Fairness & Bias Mitigation',
     'Neuroimaging & Brain-Behavior Modeling', 'Clinical Decision Support', 'Transfer Learning',
     'Human-Centered AI', 'Large-Scale Observational Studies',
@@ -86,12 +87,12 @@ export default function About() {
             transition={{ duration: 0.7 }}
           >
             <h3 className="text-2xl font-bold text-ink dark:text-white mb-6">
-              Research Scientist. Published Author. Collaborator.
+              Data Analyst. AI/ML Researcher. Published Author.
             </h3>
 
             <div className="space-y-4 text-ink-muted dark:text-gray-400 leading-relaxed">
               <p>
-                I'm an AI Research Scientist and PhD candidate at <strong className="text-ink dark:text-white">Morgan State University</strong> with a focus on healthcare AI, explainability, and algorithmic fairness. My work involves designing, validating, and communicating novel machine learning methods — from hypothesis to peer-reviewed publication.
+                I'm a data analyst and AI/ML researcher with <strong className="text-ink dark:text-white">6+ years</strong> turning large, messy datasets into decision-ready dashboards, reports, and models for government, healthcare, and financial-sector stakeholders. I'm currently interning as a data analyst at the <strong className="text-ink dark:text-white">Maryland Department of Transportation</strong>, delivering Governor's Office KPI reporting, alongside PhD research at <strong className="text-ink dark:text-white">Morgan State University</strong> focused on healthcare AI, explainability, and algorithmic fairness.
               </p>
               <p>
                 With <strong className="text-ink dark:text-white">10+ publications</strong> in journals including <strong className="text-ink dark:text-white">IEEE Access</strong>, <strong className="text-ink dark:text-white">Biomedical Signal Processing & Control</strong>, and <strong className="text-ink dark:text-white">Biological Psychiatry</strong>, I bring a track record of independent and collaborative research across healthcare, neuroimaging, transportation equity, and public infrastructure domains.

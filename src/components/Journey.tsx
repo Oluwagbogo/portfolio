@@ -46,6 +46,24 @@ const chapters = [
     milestone: '10+ publications · Yale collaboration · IEEE ICMI, CAI, BIBE',
     side: 'left',
   },
+  {
+    emoji: '🏛️',
+    period: '2025 – Present',
+    location: 'Morgan State University · RCMI IDC Center',
+    title: 'Beyond the Lab — Running Research Operations',
+    story: `In October 2025, I stepped into an Operations Coordinator role for the RCMI IDC Center, an NIH/NIMHD-funded research hub. I built the center's relational database, automated its administrative workflows, and built its public website — work that's less about models and more about making sure research infrastructure actually runs.`,
+    milestone: 'Grant operations · Relational database · Public website launch',
+    side: 'right',
+  },
+  {
+    emoji: '🚦',
+    period: '2026 – Present',
+    location: 'Maryland Department of Transportation',
+    title: 'Back to Dashboards, at Government Scale',
+    story: `In July 2026, I joined the Maryland Department of Transportation as a Data Analyst Intern, delivering Governor's Office KPI reporting across four modal administrations. Using Power BI, Power Query, and an Alteryx-driven automation pipeline, I turned a fully manual report build into a one-click run — the same instinct that got me into this field in the first place: data isn't useful until it reaches the right person, in the right form, at the right time.`,
+    milestone: "Governor's Office KPI reporting · Alteryx automation · One-click reporting",
+    side: 'left',
+  },
 ]
 
 export default function Journey() {

@@ -2,19 +2,19 @@ export const personal = {
   name: 'Joseph Oluwagbogo Aina',
   shortName: 'Joseph Aina',
   title: 'Certified Artificial Intelligence Engineer (CAIE™)',
-  subtitle: 'AI Research Scientist · PhD Candidate · Healthcare AI & Fairness',
+  subtitle: 'Data Analyst · AI/ML Researcher · Certified AI Engineer (CAIE™)',
   email: 'olugbogoaina@gmail.com',
   phone: '+1 (410) 399-8883',
   github: 'https://github.com/Oluwagbogo',
   linkedin: 'https://linkedin.com/in/joseph-oluwagbogo-aina',
   googleScholar: 'https://scholar.google.com/citations?user=ef1Y6swAAAAJ&hl',
-  bio: `AI Research Scientist and PhD candidate at Morgan State University (GPA 4.0/4.0) with 10+ peer-reviewed publications. I design explainable, bias-aware AI systems for healthcare — spanning early-stage cancer diagnostics, neuroimaging-based psychiatric prediction, and algorithmic fairness. My research is published in IEEE Access, Biomedical Signal Processing & Control, Biological Psychiatry, and presented at international conferences.`,
+  bio: `Data analyst and AI/ML researcher with 6+ years turning large, messy datasets into decision-ready dashboards, reports, and models for government, healthcare, and financial-sector stakeholders. I'm currently interning as a Data Analyst at the Maryland Department of Transportation, delivering Governor's Office KPI reporting using Power BI and Alteryx-driven automation, while pursuing a PhD at Morgan State University (GPA 4.0/4.0) with 10+ peer-reviewed publications on explainable, bias-aware AI for healthcare — published in IEEE Access, Biomedical Signal Processing & Control, and Biological Psychiatry.`,
 }
 
 export const stats = [
   { label: 'Publications', value: 9, suffix: '+' },
   { label: 'GPA', value: 4.0, suffix: '/4.0', decimals: 1 },
-  { label: 'Years Experience', value: 7, suffix: '+' },
+  { label: 'Years Experience', value: 6, suffix: '+' },
   { label: 'Transit Records Analyzed', value: 150, suffix: 'M+' },
 ]
 
@@ -34,7 +34,8 @@ export const skills = {
   'Data Analysis & Visualization': [
     { name: 'Python (NumPy, Pandas, Scikit-learn)', level: 95 },
     { name: 'SQL & Large-Scale Data Processing', level: 90 },
-    { name: 'Power BI / Tableau', level: 87 },
+    { name: 'Power BI / Power Query / Tableau', level: 90 },
+    { name: 'Alteryx & ETL Workflow Automation', level: 85 },
     { name: 'Matplotlib / Research Figures', level: 90 },
   ],
   'Research Infrastructure': [
@@ -47,10 +48,33 @@ export const skills = {
 
 export const experience = [
   {
+    role: 'Data Analyst Intern',
+    org: 'Maryland Department of Transportation (MDOT)',
+    location: 'MD, USA',
+    period: 'Jul 2026 – Present',
+    stack: 'Power BI · Power Query · Excel · Alteryx · Python',
+    bullets: [
+      'Deliver decision-ready KPI reporting for the Governor\'s Office by consolidating performance data across four MDOT modal administrations (MTA, TSO, SHA, MVA) into one presentation-ready report every reporting cycle, using integrated Power BI, Power Query, and Excel workflows.',
+      'Freed analyst time for higher-value work by converting a fully manual, multi-step report build into a one-click automated run, designing an Alteryx workflow supported by Python scripting and Excel data modeling.',
+    ],
+  },
+  {
+    role: 'Operations Coordinator — RCMI IDC Center (Graduate Research Assistant)',
+    org: 'Morgan State University',
+    location: 'Baltimore, MD, USA',
+    period: 'Oct 2025 – Present',
+    stack: 'SQL · PHP · HTML · Excel · GitHub',
+    bullets: [
+      'Sustain on-time grant disbursement and awardee correspondence for an NIH/NIMHD-funded research center by coordinating end-to-end grant operations across multiple funding cycles.',
+      'Increased data accessibility and accuracy for grant administration by designing and maintaining the center\'s relational database, adopted by administrative teams for awardee records, tracking, and compliance reporting.',
+      'Reduced manual administrative workload and supported NIH compliance by automating administrative workflows and building the center\'s public website.',
+    ],
+  },
+  {
     role: 'AI Research Scientist (Graduate Research Assistant)',
     org: 'Morgan State University',
     location: 'Baltimore, MD, USA',
-    period: 'Aug 2022 – Present',
+    period: 'Aug 2022 – Oct 2025',
     stack: 'Research Methods · Python · Statistical Analysis · ML/DL · SQL · PowerBI',
     bullets: [
       'Designed novel ML/DL frameworks for breast cancer detection and clinical risk stratification using large-scale mammography datasets (EMBED); work accepted in Biomedical Signal Processing & Control (2026).',

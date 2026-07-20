@@ -34,6 +34,8 @@ const techBadges = [
   { name: 'SQL', emoji: '🗄️' },
   { name: 'NumPy / Pandas', emoji: '📐' },
   { name: 'Power BI', emoji: '📊' },
+  { name: 'Power Query', emoji: '🔗' },
+  { name: 'Alteryx', emoji: '⚙️' },
   { name: 'Tableau', emoji: '📈' },
   { name: 'Matplotlib', emoji: '📉' },
   { name: 'Git / GitHub', emoji: '🌿' },
