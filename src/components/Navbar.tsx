@@ -90,7 +90,7 @@ export default function Navbar() {
               href={`mailto:${personal.email}`}
               className="inline-flex items-center gap-2 bg-accent text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-accent-dark transition-colors"
             >
-              Hire Me
+              Let's Chat
             </a>
           </div>
 
@@ -140,7 +140,7 @@ export default function Navbar() {
                   href={`mailto:${personal.email}`}
                   className="block text-center bg-accent text-white text-sm font-semibold px-4 py-2.5 rounded-full hover:bg-accent-dark transition-colors"
                 >
-                  Hire Me
+                  Let's Chat
                 </a>
               </li>
             </ul>
