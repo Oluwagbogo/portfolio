@@ -40,8 +40,10 @@ function Typewriter({ texts }: { texts: string[] }) {
       if (displayed.length > 0) {
         t = setTimeout(() => setDisplayed(d => d.slice(0, -1)), 28)
       } else {
-        setIdx(i => (i + 1) % texts.length)
-        setPhase('typing')
+        t = setTimeout(() => {
+          setIdx(i => (i + 1) % texts.length)
+          setPhase('typing')
+        }, 0)
       }
     }
     return () => clearTimeout(t)
