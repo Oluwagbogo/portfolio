@@ -12,7 +12,7 @@ const fadeUp = (delay = 0) => ({
 })
 
 const ROLES = [
-  'a Data Analyst Intern',
+  'a Data Analyst',
   'an AI/ML Researcher',
   'a Healthcare AI Specialist',
   'an IEEE-Published Author',
